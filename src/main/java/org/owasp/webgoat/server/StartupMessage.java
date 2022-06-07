@@ -15,7 +15,10 @@ public class StartupMessage {
 
     private String port;
     private String address;
-
+    
+    /**
+     * Defines actions on startup
+     */
     @EventListener
     void onStartup(ApplicationReadyEvent event) {
         if (StringUtils.hasText(port) && !StringUtils.hasText(System.getProperty("running.in.docker"))) {
