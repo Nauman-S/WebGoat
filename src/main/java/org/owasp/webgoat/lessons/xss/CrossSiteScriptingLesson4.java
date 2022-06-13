@@ -38,7 +38,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Slf4j
 @AssignmentHints(value = {"xss-mitigation-4-hint1"})
 public class CrossSiteScriptingLesson4 extends AssignmentEndpoint {
-
+	
+	/**
+	 * This is a testing comment.
+	 */
     @PostMapping("/CrossSiteScripting/attack4")
     @ResponseBody
     public AttackResult completed(@RequestParam String editor2) {
